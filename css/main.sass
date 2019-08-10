@@ -1,0 +1,286 @@
+@mixin size($w,$h)
+  width: $w
+  height: $h
+@mixin y-circle
+  +size(50px,50px)
+  border-radius: 50%
+  background-color: #F4EBBE
+@mixin p
+  font-size: 16px
+  letter-spacing: 2px
+  font-weight: 400
+@mixin title
+  font-size: 30px
+  letter-spacing: 1px
+  font-weight: 600
+@mixin b-circle
+  +size(20px,20px)
+  border-radius: 50%
+  background-color: #87D1D4
+@mixin s-circle
+  +size(80px,80px)
+  border-radius: 100%
+  background-color: #87D1D4
+  overflow: hidden
+@mixin g-circle
+  +size(66px,66px)
+  border-radius: 100%
+  background-color: #F3F3F5
+@mixin box
+  +size(80px,80px)
+  background-color: #F3F3F5
+*
+  font-family: 微軟正黑體
+  font-size: 18px
+  vertical-align: middle
+body,html
+  padding: 0
+  margin: 0
+img
+  +size(25px,25px)
+  margin-right: 10px
+.top
+  +size(100%,250px)
+  background-color: #F4EBBE
+  padding-top: 50px
+.top-in
+  width: 750px
+  height: 250px
+  margin: 0 auto
+  border-left: solid 5px #87D1D4
+  border-right: solid 5px #87D1D4
+  border-top: solid 5px #87D1D4
+.head
+  position: relative
+  bottom: 10px
+  margin-top: 40px
+  margin-left: 70px
+  +size(180px,180px)
+  border-radius: 50%
+  border: solid 5px #87D1D4
+  background-image: url(https://i.imgur.com/BLsjhfc.jpg)
+  background-size: cover
+.profile
+  position: absolute
+  left: 230px
+  top: 50px
+  font-size: 30px
+  font-weight: 600
+  letter-spacing: 7px
+  color: #565676
+.bottom
+  +size(100%,100%)
+  background-color: #87D1D4
+.b-in
+  width: 750px
+  margin: 0 auto
+  background-color: #F4EBBE
+.left
+  position: relative
+  display: inline-block
+  +size(50%,100%)
+  box-sizing: border-box
+  background-color: #F3F3F5
+  padding-top: 50px
+  padding-bottom: 60px
+  padding-left: 25px
+.contact
+  +title
+  position: absolute
+  top: 50px
+  left: 100px
+.live
+  +p
+  margin-top: 35px
+.tel
+  +p
+  margin-top: 20px
+.mail
+  +p
+  margin-top: 20px
+.person
+  +title
+  position: absolute
+  top: 275px
+  left: 100px
+.p
+  +p
+  margin-top: 15px
+  padding-right: 25px
+  line-height: 25px
+.skills
+  +title
+  position: absolute
+  top: 495px
+  left: 100px
+.s-circle1
+  +s-circle
+  position: absolute
+  top: 70px
+  left: -30px
+.s-circle2
+  +s-circle
+  position: absolute
+  top: 70px
+  left: 70px
+.s-circle3
+  +s-circle
+  position: absolute
+  top: 70px
+  left: 170px
+.s-circle4
+  +s-circle
+  position: absolute
+  top: 160px
+  left: 20px
+.s-circle5
+  +s-circle
+  position: absolute
+  top: 160px
+  left: 130px
+.w
+  +size(70px,50px)
+  position: absolute
+  top: 30px
+  left: 5px
+  font-size: 12px
+  font-weight: 400
+  text-align: center
+.g-circle
+  +g-circle
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+.box
+  +box
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+.right
+  position: relative
+  display: inline-block
+  +size(50%,100%)
+  margin-left: -5px
+  box-sizing: border-box
+  background-color: #fff
+  padding-top: 50px
+  padding-bottom: 60px
+  padding-left: 25px
+.edu
+  +title
+  position: absolute
+  top: 50px
+  left: 100px
+.b-circle1
+  +b-circle
+  margin-top: 40px
+.b-circle2
+  +b-circle
+  margin-top: 50px
+.edu-p
+  +p
+  margin-top: -22px
+  margin-left: 30px
+.lan
+  +title
+  position: absolute
+  top: 275px
+  left: 100px
+.lan-p
+  +p
+  position: relative
+  top: 15px
+  line-height: 50px
+.hp
+  +size(150px,14px)
+  position: absolute
+  top: 16px
+  left: 50px
+  border-radius: 15px
+  border: solid 3px #87D1D4
+.hp-c
+  +size(130px,14px)
+  position: absolute
+  top: 16px
+  left: 50px
+  border-radius: 15px
+  background-color: #87D1D4
+  border: solid 3px #87D1D4
+.hp-e
+  +size(110px,14px)
+  position: absolute
+  top: 16px
+  left: 50px
+  border-radius: 15px
+  background-color: #87D1D4
+  border: solid 3px #87D1D4
+.wword-e
+  position: absolute
+  font-size: 12px
+  color: #fff
+  font-weight: 500
+  top: -18px
+  left: 20px
+.hp-k
+  +size(90px,14px)
+  position: absolute
+  top: 16px
+  left: 50px
+  border-radius: 15px
+  background-color: #87D1D4
+  border: solid 3px #87D1D4
+.wword-k
+  position: absolute
+  font-size: 12px
+  color: #fff
+  font-weight: 500
+  top: -18px
+  left: 7px  
+.ex
+  +title
+  position: absolute
+  top: 495px
+  left: 100px
+.b-circle3
+  +b-circle
+  margin-top: 30px    
+.b-circle4
+  +b-circle
+  margin-top: 10px  
+.ex-p
+  +p
+  margin-top: -22px
+  margin-left: 30px
+.line
+  position: relative
+  left: 20px
+  background-color: #87D1D4
+  +size(7px,700px)
+.y-circle1
+  +y-circle
+  position: absolute
+  top: -3px
+  left: -20px
+.y-circle2
+  +y-circle
+  position: absolute
+  top: 220px
+  left: -20px
+.y-circle3
+  +y-circle
+  position: absolute
+  top: 440px
+  left: -20px
+
+.yellow
+  +size(750px,100px)
+  background-color: #F4EBBE
+  margin: 0 auto
+.end 
+  padding-top: 15px
+  text-align: center
+  color: #fff
+  font-size: 55px
+  letter-spacing: 20px
+  font-weight: 400
